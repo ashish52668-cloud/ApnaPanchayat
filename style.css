@@ -822,4 +822,18 @@ text-shadow: 0 1px 0 #CCCCCC, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 
         color:black;
         font-size:12px;
 }
-
+@media (max-width:768px) {
+    .textmsg h2 {
+        font-size:25px;
+        font-weight:400;
+    }
+    .textmsg h3 {
+        font-size:25px;
+        font-weight:600;
+    }
+    .textmsg p {
+        font-size:15px;
+        font-weight:200;
+    }
+}
+        
