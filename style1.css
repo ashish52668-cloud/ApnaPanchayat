@@ -2,9 +2,29 @@
     width:100%;
 }
 .toparea img {
-    height:40%;
+    height:auto;
     width:100%;
+    display:block;
 }
 .toparea h2 {
     text-align:center;
+    font-size:35px;
+    font-weight:700;
+    font-family:'Times New Roman', Times, serif;
+}
+.breadcrumb-item {
+    font-size:25px;
+    font-weight:600;
+    font-family:'Times New Roman', Times, serif;
+    text-align:center;
+}
+.aboutsec h3 {
+    font-size:28px;
+    font-weight:700;
+}
+.aboutsec p {
+    font-size:23px;
+    font-weight:400;
+    font-family:'Times New Roman', Times, serif;
+    color:dodgerblue;
 }
