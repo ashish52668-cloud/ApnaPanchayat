@@ -154,13 +154,13 @@ html,body{
 }
 .quick {
     width:100%;
-    padding:40px 60px;
+    padding:40px 30px;
     background:#FAA630;
     margin-top:10px;
 
 }
 .area {
-    padding:20px 40px;
+    padding:20px 30px;
     background:navajowhite;
     margin-bottom:20px;
 }
