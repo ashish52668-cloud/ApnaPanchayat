@@ -792,7 +792,18 @@ text-shadow: 0 1px 0 #CCCCCC, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 
     }
 }
 @media (max-width:760px) {
-    #logo img {
-        justify-content:center;
+    #logo {
+        jusitfy-content:center;
+    }
+}
+@media (max-width:768px) {
+    .contactpart {
+        width:100%;
+    }
+    .contactpart input {
+        padding:13px 28px;
+    }
+    .contactpart textarea {
+        padding:40px 45px;
     }
 }
