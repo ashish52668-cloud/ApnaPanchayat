@@ -823,10 +823,11 @@ h2  {
     }
     .left1 h2 {
         color:black;
-        padding:10px 10px;
-        font-weight:500;
+        padding:5px 5px;
+        font-weight:400;
+        font-size:22px;
         width:auto;
-        text-align:left;
+        text-align:center;
         font-family:Verdana, Geneva, Tahoma, sans-serif;
     }
     .left1 p {
