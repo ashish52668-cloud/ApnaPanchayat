@@ -823,9 +823,9 @@ h2  {
     }
 }
 @media (max-width:768px) {
-    .quick {
+.quick {
     width:100%;
-    padding:30px 50px;
+    padding:10px 20px;
     margin-top:10px;
 
 }
