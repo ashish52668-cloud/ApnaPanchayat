@@ -821,6 +821,35 @@ h2  {
     .left {
         padding:0 20px;
     }
+    .left1 h2 {
+        color:black;
+        padding:10px 10px;
+        font-weight:500;
+        width:auto;
+        text-align:left;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+    }
+    .left1 p {
+        padding:10px 40px;
+        font-size:20px;
+        line-height:20px;
+        width:auto;
+        color:black;
+        text-align:left;
+            
+    }
+
+    .newbtn button {
+        width:100px;
+        height:50px;
+        border-radius:10px;
+        background:#FAFAD2;
+        color:black;
+        font-size:19px;
+        margin-left:30px;
+        border:none;
+        -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
+        box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
 }
 @media (max-width:768px) {
 .quick {
