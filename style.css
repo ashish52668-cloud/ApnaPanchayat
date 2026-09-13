@@ -804,6 +804,11 @@ h2  {
     left:70%;
     margin-right:70px;   
 }
+@media (max-width:768px) {
+    .end1 h4::before,.end1 h4::after {
+        display:none;
+    }
+}
 
 @media (max-width: 768px) {
     #title1 h1{
