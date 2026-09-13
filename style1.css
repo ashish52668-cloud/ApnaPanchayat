@@ -5,15 +5,44 @@
     height:auto;
     width:100%;
     display:block;
+    position:relative;
+}
+.impbtn button {
+    position:absolute;
+    top:50px;
+    right:50px;
+    padding:10px 20px;
+    border-radius:7px;
+    border:solid 2px black;
+    background:sandybrown;
+    font-size:20px;
+    color:darkgreen;
+    font-weight:600;
+}
+.rbtn button {
+    position:absolute;
+    top:50px;
+    left:50px;
+    padding:10px 22px;
+    border-radius:7px; 
+    border:solid 3px black;
+    font-size:20px;
+    background:sandybrown;
+    font-size:20px;
+    color:darkgreen;
+    font-weight:600;
 }
 .toparea h2 {
     text-align:center;
     font-size:35px;
     font-weight:700;
     font-family:'Times New Roman', Times, serif;
+    margin-top:20px;
+    color:red;
+    text-shadow: 0 1px 0 #CCCCCC, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15);
 }
 .breadcrumb-item {
-    font-size:25px;
+    font-size:24px;
     font-weight:600;
     font-family:'Times New Roman', Times, serif;
     text-align:center;
@@ -21,10 +50,127 @@
 .aboutsec h3 {
     font-size:28px;
     font-weight:700;
+    color:peru;
 }
 .aboutsec p {
     font-size:23px;
     font-weight:400;
     font-family:'Times New Roman', Times, serif;
     color:dodgerblue;
+}
+.members {
+    width:100%;
+    padding:10px 20px;
+    background:lightslategrey;
+}
+.members img {
+    height:350px;
+}
+.members h4 {
+    text-align:center;
+    font-size:28px;
+    font-weight:700;
+    color:peru;
+    font-family:'Times New Roman', Times, serif;
+}
+.members .card {
+    background:papayawhip;
+    color:black;
+}
+
+.members .card i {
+    color:maroon;
+}
+.members .card:hover {
+    transition:2s;
+    transform:translate(5px,7px);
+    
+    color:sienna;
+}
+.members button {
+    padding:5px 13px;
+    border-radius:6px;
+    border:none;
+    text-align:center;
+    font-size:20px;
+    background:burlywood;
+    color:black;
+    font-weight:600;
+}
+.extrabtn button {
+    padding:12px 25px;
+    display:flex;
+    justify-content:center;
+    margin:0 auto;
+
+}
+.extrabtn button:hover {
+    -webkit-box-shadow: 5px 5px 15px 5px #000000; 
+    box-shadow: 5px 5px 15px 5px #000000;
+    
+    color:maroon;
+}
+.resp {
+    width:100%;
+    padding:10px 20px;
+    background:tan;
+   
+}
+.inline {
+        width:100%;
+        height:5px;
+        background:linear-gradient(to right,transparent,black,transparent);
+} 
+.resp h2 {
+    text-align:center;
+    font-size:35px;
+    font-family:'Times New Roman', Times, serif;
+    font-weight:650;
+    color:darkred;
+    position:relative;
+
+}
+/* .resp h2::after, .resp h2::before {
+    content:"";
+    position:absolute;
+    display:block;
+    width:630px;
+    height:4px;
+    top:50%;
+    background:linear-gradient(to right,red, yellow);
+}
+.resp h2::after {
+    right:0;
+    margin-left:10px;
+}
+.resp h2::before {
+    left:0;
+    margin-right:10px;
+} */
+.resp h3 {
+    text-align:center;
+    font-size:28px;
+    font-weight:600;
+    padding:15px 0;
+}
+.resp i {
+    color:#87ABA3;
+    font-size:40px;
+    justify-content:center;
+    display:flex;
+    padding-top:5px;
+}
+.icon-box {
+    border:solid 2px black;
+    margin-bottom:10px;
+    border-radius:10px;
+} 
+.resp h4 {
+    text-align:center;
+    font-weight:600;
+}
+.icon-box p {
+    font-size:18px;
+    text-align:center;
+    padding-bottom:20px;
 }

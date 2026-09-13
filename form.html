@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Form Document</title>
+    <style>
+        /*.top input {
+            color:red;
+            border:solid 2px grey;
+            padding:10px 20px;
+            
+            margin-top:10px;
+            margin-left: 60px;
+            border:none;
+            border-bottom:solid 4px black;
+        }*/
+        .top input[type=text] {
+            margin-left:100px;
+        }
+        .top input[type=number] {
+            color:cadetblue;
+            border:none;
+            border-bottom:solid 4px black;
+            padding:10px 20px;
+            margin-top:10px;
+        }
+        .top input[type=email] {
+            color:darkgoldenrod;
+            border:none;
+            border-bottom:solid 5px black;
+            width:200px;
+            margin-top:10px;
+            margin-left:30px;
+            transition:all 2s;
+            
+        }
+        .top input[type=email]:focus {
+            outline:none;
+            color:brown;
+            background: burlywood;
+            width:600px;
+            
+
+        }
+        .top button{
+            padding:10px 30px;
+        }
+        textarea {
+            height:250px;
+            width:700px;
+            resize:none
+        }
+        input[type="submit"] {
+            padding:10px 20px;
+            background:cyan;
+        }
+        .line {
+            width:100%;
+            height:5px;
+            background:linear-gradient(to right,transparent,cyan,transparent);
+        } 
+        h1  {
+            color:green;
+            text-align:center;
+            padding-bottom:20px;
+            font-size:35px;
+        }
+        /*@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');*/
+
+/*:root {
+  --bg-color: #ffe6e6; 
+  --text-color: #d66d75;
+  --switch-bg: #ffccbc;
+  --handle-bg: #fff;
+}
+
+body.dark-mode {
+  --bg-color: #2d1b4e; 
+  --text-color: #e0c3fc;
+  --switch-bg: #4a3b78;
+  --handle-bg: #1a1a2e;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: 'Poppins', sans-serif;
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.main-container {
+  text-align: center;
+}
+
+#theme-toggle {
+  display: none;
+}
+
+
+.toggle-switch {
+  position: relative;
+  display: inline-block;
+  width: 80px;
+  height: 40px;
+  background-color: var(--switch-bg);
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.4s;
+  box-shadow: inset 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.switch-handle {
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 32px;
+  height: 32px;
+  background-color: var(--handle-bg);
+  border-radius: 50%;
+  transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.27, 1.55); /* Efeito de pulo */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+/*.icon-moon { display: none; }
+.icon-sun { display: block; font-size: 18px; }
+
+#theme-toggle:checked + .toggle-switch .switch-handle {
+  transform: translateX(40px);
+}
+
+#theme-toggle:checked + .toggle-switch .icon-sun { display: none; }
+#theme-toggle:checked + .toggle-switch .icon-moon { display: block; font-size: 16px; }*/
+    </style>
+</head>
+<body>
+    <section class="top">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col">      
+                    <form>
+                        <!-- <label for="name">Name</label>
+                        <input type="text" name="studentname" placeholder="Enter Your Name" required/><br><br>
+                        <label for="name">Mobile Number</label>
+                        <input type="number" name="studentnumber" placeholder="Enter Your Mobile number" required/><br><br>
+                        <label for="name">Date-Of-birth</label>
+                        <input type="date" name="studentdob" placeholder="Enter Your DOB" required/><br><br>
+                        <label for="name">Email</label>
+                        <input type="email" name="studentemail" placeholder="Enter Your Email" required/><br><br>
+                        <label for="name">File</label>
+                        <input type="file" name="studentphoto" placeholder="Enter Your Files" required/><br><br>
+                        <label for="name">Password</label>
+                        <input type="password" name="studentpwd" placeholder="Enter Your password" required/><br><br>
+                        <label for="name">Color</label>
+                        <input type="color" name="colorpicker" placeholder="Enter Your password" required/><br><br>
+                        <label for="name">Range</label>
+                        100<input type="range" name="ranes" min="100" max="1000"/>1000<br><br>
+                        <label for="time">Time</label>
+                        <input type="time" name="Timeplan" placeholder="Enter Your time" required/><br><br>
+                        <label for="name">Link</label>
+                        <input type="url" name="studenturl" placeholder="Put Your Link" required/><br><br>
+                        <label for="name">Telephone</label>
+                        <input type="tel" name="studentname" placeholder="Enter Your password" required/><br><br>
+                        <label for="name">Search</label>
+                        <input type="search" name="studentname" placeholder="Search Anything" required/><br><br>
+                        <label for="name">Image</label>
+                        <input type="password" name="studentname" placeholder="Place Your image" required/><br><br>
+                        <label for="name">Hidden</label>
+                        <input type="hidden" name="studentname" placeholder="Hidden file" required/><br><br>
+                        <label for="name">Month</label>
+                        <input type="month" name="studentname" placeholder="Enter month" required/><br><br>
+                        <button type="button">Submit</button><br><br> -->
+
+                        <label for="text">Gender:</label>
+                        <input type="radio" name="gender" value="M"/>Male
+                        <input type="radio" name="gender" value="F"/>Female
+                        <input type="radio" name="gender" value="O"/>Others<br><br>
+
+                        <label for="text">Choose Your Identity:-</label><br>
+                        <input type="checkbox" name="pan" value="1"/>PAN<br>
+                        <input type="checkbox" name="aadhar" value="1"/>Aadhar<br>
+                        <input type="checkbox" name="ration" value="1"/>Ration Card<br>
+                        <input type="checkbox" name="vcard" value="1"/>Voter Id<br><br>
+
+                        <label for="state">State</label>
+                        <select name="state" required >
+                            <option value="">Choose State</option>
+                            <option value="jh">Jharkhand</option>
+                            <option value="br">Bihar</option>
+                            <option value="rj">Rajathan</option>
+                            <option value="wb">West Bengal</option>
+                            <option value="up">Uttar Pradesh</option>
+                            <option value="od">Odisha</option>
+                        </select><br><br>
+                        <label for="state">State</label>
+                        <select name="state" required multiple >
+                            <option value="">Choose State</option>
+                            <option value="jh">Jharkhand</option>
+                            <option value="br">Bihar</option>
+                            <option value="rj">Rajathan</option>
+                            <option value="wb">West Bengal</option>
+                            <option value="up">Uttar Pradesh</option>
+                            <option value="od">Odisha</option>
+                        </select><br><br>
+
+                        <textarea name="msg">
+                            Write msg here
+                        </textarea><br><br>
+
+                        Register Yourself: <input type="submit" value="register"/><br>
+                        Logout Sucsesfully: <input type="reset" value="logout"/>
+
+                        <h1>Hello Ashish Kumar how are You!</h1>
+                        <div class="line"></div>
+                        
+                </div>
+            </div>
+        <!-- </div>
+        <div class="main-container">
+  <input type="checkbox" id="theme-toggle">
+  
+  <label for="theme-toggle" class="toggle-switch">
+    <div class="switch-handle">
+      <span class="icon-sun">☀️</span>
+      <span class="icon-moon">🌙</span>
+    </div>
+  </label>
+  
+  <h2 id="status-text">Good Morning! 🌸</h2>
+</div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script>const toggle = document.getElementById('theme-toggle');
+const text = document.getElementById('status-text');
+const body = document.body;
+
+toggle.addEventListener('change', () => {
+
+  body.classList.toggle('dark-mode');
+  
+  if(toggle.checked) {
+    text.innerHTML = "Good Night! 🌙";
+  } else {
+    text.innerHTML = "Good Morning! 🌸";
+  }
+});</script> -->
+</body>
+</html>
