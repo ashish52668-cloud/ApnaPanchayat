@@ -830,7 +830,7 @@ h2  {
 
 }
 .area {
-    padding:15px 60px;
+    padding:10px 40px;
     background:navajowhite;
     margin-bottom:20px;
     border-radius:4px;
@@ -838,8 +838,8 @@ h2  {
 }
 .area h2 {
     text-align:center;
-    font-size:30px;
-    font-weight:700;
+    font-size:25px;
+    font-weight:600;
     font-family:Georgia, 'Times New Roman', Times, serif;
     color:black;
     padding:5px 0;
@@ -868,8 +868,8 @@ h2  {
         background:linear-gradient(to right,transparent,black,transparent);
 } 
 .card-body img {
-    height:80px;
-    width:120px;
+    height:50px;
+    width:70px;
 }
 .card-body h5 {
     padding:10px 0 0 20px;
@@ -897,7 +897,7 @@ h2  {
     font-weight:bold;
 }
 .services-btn button {
-    padding:10px 80px;
+    padding:10px 50px;
     border-radius:8px;
     font-size:25px;
     background:navajowhite;
