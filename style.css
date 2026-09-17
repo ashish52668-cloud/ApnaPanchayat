@@ -639,7 +639,7 @@ h2  {
     color:grey;
 }
 .topsec:hover h3,.topsec:hover h4 {
-    transform: translate(3px,2px);
+    translate:scale(0.9,0.9);
     transition:1s;
 }
 .topsec p {
