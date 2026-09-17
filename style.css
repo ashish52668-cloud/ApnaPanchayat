@@ -639,7 +639,7 @@ h2  {
     color:grey;
 }
 .topsec:hover h3,.topsec:hover h4 {
-    transform:scale(0.9,0.9);
+    transform: translate(3px,2px);
     transition:1s;
 }
 .topsec p {
@@ -667,7 +667,7 @@ h2  {
 }
 .box:hover {
     background:#FCCF94;
-    transform:translateY(-8px);
+    transform:scale(0.9,0.9;
     border:solid 1px black;
 }
 .box:hover h3 {
