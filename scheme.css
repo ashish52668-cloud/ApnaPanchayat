@@ -1,0 +1,16 @@
+.toparea{
+    width:100%;
+    background:wheat;
+    text-align:center;
+    color:black;
+}
+.toparea h1 {
+    font-weight:700;
+    font-family:'Times New Roman', Times, serif;
+    font-size:30px;
+    font-weight:700;
+}
+.banner img {
+    width:100%;
+    height:70%;
+}

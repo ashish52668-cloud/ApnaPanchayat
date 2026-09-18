@@ -32,6 +32,11 @@
     color:darkgreen;
     font-weight:600;
 }
+.impbtn a,.rbtn a{
+    text-decoration:none;
+    color:black;
+
+}
 .toparea h2 {
     text-align:center;
     font-size:35px;
