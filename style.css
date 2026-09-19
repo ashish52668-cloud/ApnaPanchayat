@@ -847,8 +847,8 @@ h2  {
     #logo {
             width:100%;
             height:auto;
-            text-align:center;
-            float:nnone;
+            margin:0 auto;
+            float:none;
             
     }
     #logo img {
