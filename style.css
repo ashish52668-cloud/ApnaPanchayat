@@ -845,9 +845,10 @@ h2  {
         font-size: 35px;
     }
     #logo {
-            width:auto;
+            width:100%;
             height:auto;
-            text-align: center;
+            text-align:center;
+            float:nnone;
             
     }
     #logo img {
@@ -855,6 +856,7 @@ h2  {
             height:140px;
             display:block;
             margin:0 auto;
+            padding-left:0;
             padding-bottom:5px;
     }
     #title1 h1 {    
