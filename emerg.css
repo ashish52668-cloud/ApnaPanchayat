@@ -1,11 +1,15 @@
 .toparea {
-    background:khaki;
+    background:peru;
     width:100%;
     text-align:center;
     padding:20px 0;
     margin-bottom:20px;
 }
-
+.toparea h2 {
+    font-size:40px;
+    color:black;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 .mainarea h5 {
     text-align:left;
     font-size:30px;
@@ -19,6 +23,7 @@
     margin-bottom:20px;
     border:solid 2px black;
     border-radius:12px;
+    background:darkgoldenrod;
 }
 .box:hover {
     -webkit-box-shadow: 5px 5px 15px 5px #000000; 
@@ -26,12 +31,22 @@
     transform:translate(5px,4px);
     transition:1s;
 }
+.box button {
+    padding:8px 30px;
+    color:black;
+    font-weight:500;
+    border-radius:8px;
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
+    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+    
+}
 .box1 {
     text-align:center;
     margin:0 auto;
     border:solid 2px black;
     border-radius:12px;
     margin-bottom:20px;
+    background:olive;
     
 }
 .box1 h5 {
@@ -58,11 +73,18 @@
     box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
 }
 .btan button {
-    padding:30px 100px;
+    padding:20px 60px;
     margin:20px auto;
     border-radius:15px;
     font-size:22px;
     display:block;
     -webkit-box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
     box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);  
+}
+@media (max-width:768px){
+    .btan button {
+        padding:10px 30px;
+        font-size:17px;
+        color:black;
+    }
 }

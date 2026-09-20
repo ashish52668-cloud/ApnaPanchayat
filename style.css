@@ -86,6 +86,18 @@ html,body{
 }
 .nav-link:hover {
     border-top:solid 2px black; 
+    transform: none;
+}
+.dropdown-menu li a {
+        color:black;
+        background-color:#D5F4E6;
+        border-bottom:solid 1px black;
+        border-radius:5px;
+        padding:15px 35px;
+        margin:0;
+}
+.dropdown-menu li:hover {
+    background:darkseagreen;
 }
 
 
@@ -303,10 +315,6 @@ html,body{
 .textmsg h2::after{
     left:65%;
     margin-left:10px;
-}
-.textmsg h2:hover {
-    text-shadow:5px -5px 0 red;
-    transition:all 2s;
 }
 .textmsg p {
     font-size:25px;
@@ -844,20 +852,19 @@ h2  {
     #title1 h1{
         font-size: 35px;
     }
+
     #logo {
-            width:100%;
-            height:auto;
-            margin:0 auto;
-            float:none;
-            
+        float: none;
+        text-align: center;
     }
+
     #logo img {
-            width:100%;
-            height:140px;
-            display:block;
-            margin:0 auto;
-            padding-left:0;
-            padding-bottom:5px;
+        width: auto;
+        height: auto;
+        max-width: 140px;
+        padding-left: 0;
+        display: block;
+        margin: 0 auto;
     }
     #title1 h1 {    
             font-size:50px;
@@ -911,7 +918,29 @@ h2  {
         font-size:13px;
         width:100%;
         gap: 3px;
+        border:solid 2px gray;
+        border-radius:5px;
+        
     }
+    .nav-link {
+        padding-left:20px;
+        border-radius:5px;
+        background:#EDF6FE;
+        font-weight:bold;
+    }
+    .nav-link:hover {
+        border:none;
+        background:bisque;
+    }
+    .dropdown-menu li a {
+        color:black;
+        background-color:#D5F4E6;
+        border-bottom:solid 1px black;
+        border-radius:5px;
+        padding:10px;
+        
+    }
+    
 }
 @media (max-width:768px) {
     .left {
