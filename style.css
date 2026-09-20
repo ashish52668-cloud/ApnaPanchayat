@@ -687,9 +687,15 @@ h2  {
 .contactpart {
     width:100%;
     background:none;
-    padding:50px 20px;
+    padding:20px 0 0 20px;
     border:solid 2px black;
     
+}
+.contactpart h2 {
+    font-family:'Times New Roman', Times, serif;
+    text-align:center;
+    font-size:35px;
+    font-weight:700;
 }
 .contactpart .card {
     height:auto;
@@ -770,6 +776,7 @@ h2  {
 .security {
     text-align:center;
     padding-top:15px;
+    border-top:solid 1px gray;
 }
 .security h6 {
     text-align: left;
@@ -847,7 +854,23 @@ h2  {
         width:100%;
     }
 }
-
+@media (max-width:768px){
+    .contactpart label {
+        font-size:15px;
+        padding-right:5px;
+        padding-left:5px;
+        color:black;
+    }
+    .contactpart input{
+        padding:13px 20px;
+        border-radius:10px;
+    
+    }
+    .contactpart textarea {
+        padding:20px 30px;
+  
+    }
+}
 @media (max-width: 768px) {
     #title1 h1{
         font-size: 35px;
