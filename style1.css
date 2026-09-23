@@ -37,7 +37,7 @@
     color:black;
 
 }
-.toparea h2 {
+.mainarea h2 {
     text-align:center;
     font-size:35px;
     font-weight:700;
@@ -56,20 +56,44 @@
     font-size:28px;
     font-weight:700;
     color:peru;
+    padding-left:100px;
 }
 .aboutsec p {
     font-size:23px;
     font-weight:400;
     font-family:'Times New Roman', Times, serif;
     color:dodgerblue;
+    padding-left:100px;
+}
+.line {
+        width:100%;
+        height:5px;
+        background:linear-gradient(to right,transparent,black,transparent);
+        margin-bottom:15px;
+} 
+.committee h2 {
+    text-align:center;
+    padding-top:10px;
+    font-weight:700;
+    font-size:30px;
+}
+.committee .card {
+    background:#E0E2E4;
+    margin-bottom:20px;
+
+}
+#member {
+    text-align:center;
+    font-weight:700;
+    font-family:Arial, Helvetica, sans-serif;
 }
 .members {
     width:100%;
     padding:10px 20px;
-    background:lightslategrey;
+    background:#DEEAEE;
 }
 .members img {
-    height:350px;
+    height:200px;
 }
 .members h4 {
     text-align:center;
@@ -79,8 +103,11 @@
     font-family:'Times New Roman', Times, serif;
 }
 .members .card {
-    background:papayawhip;
+    background:#EAECE5;
     color:black;
+    width:100%;
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
+    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
 }
 
 .members .card i {
@@ -89,8 +116,8 @@
 .members .card:hover {
     transition:2s;
     transform:translate(5px,7px);
-    
     color:sienna;
+    
 }
 .members button {
     padding:5px 13px;
@@ -106,7 +133,7 @@
     padding:12px 25px;
     display:flex;
     justify-content:center;
-    margin:0 auto;
+    margin:10px auto;
 
 }
 .extrabtn button:hover {
@@ -159,11 +186,11 @@
     padding:15px 0;
 }
 .resp i {
-    color:#87ABA3;
-    font-size:40px;
+    color:black;
+    font-size:50px;
     justify-content:center;
     display:flex;
-    padding-top:5px;
+    padding:10px 0;
 }
 .icon-box {
     border:solid 2px black;

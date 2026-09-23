@@ -9,19 +9,22 @@
     <link rel="stylesheet" href="style4.css">
 </head>
 <body>
-    <header class="toparea">
-        <div class="container">
+    <header class="mainarea">
+        <div class="container-fluid">
             <div class="row">
                 <div class="col">
-                    <h1>Join Panchayat committee</h1>
-                    <h3>"Become a part of village development and serve your community."</h3>
+                    <img src="joinc.png">
                 </div>
             </div>
+        </div>
+    </header>
+    <section class="toparea">
+        <div class="container">
             <div class="row">
-                    <div class="col-lg-12 col-12">
+                    <div class="col-lg-12 col-sm-12 col-12">
                         <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
                         <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="#">Home</a></li>
+                            <li class="breadcrumb-item"><a href="#"><i class="fa-solid fa-house-user"></i>&nbsp;&nbsp;&nbsp;Home</a></li>
                             <li class="breadcrumb-item active" aria-current="page">Committee</li>
                             <li class="breadcrumb-item active" aria-current="page">Members</li>
                         </ol>
@@ -30,25 +33,26 @@
                 </div>
             </div>
         </div>
-    </header>
+    </section>
     <section class="para">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 col-sm-12">
-                    <h3>Join Our Committee</h3>
-                    <p>The Telonari Panchayat Committee welcomes responsible citizens who are interested in contributing to the development and welfare of the village. Members work together to improve education, health, sanitation, infrastructure, and social awareness.</p>
+                    <h3><i class="fa-solid fa-people-group"></i>&nbsp;&nbsp;&nbsp;Join Our Committee</h3>
+                    <p>The Telonari Panchayat Committee welcomes responsible citizens who are interested<br> in contributing to the development and welfare of the village. Members work together<br> to improve education, health, sanitation, infrastructure, and social awareness.</p>
                 </div>
             </div>
         </div>
     </section>
-    <section>
+    <section class="cardarea">
         <div class="container">
             <div class="row">
                 <div class="col-lg-3 col-sm-6 col-12">
                     <div class="card">
                         <div class="card-body">
-                            <i class="fa-solid fa-user-check"></i>
-                            <h3 class="card-title">Minimum 18 Years Required</h3>
+                            <i class="fa-solid fa-user"></i>
+                            <h3 class="card-title">Minimum 18 Years </h3>
+                            <h4>Required</h4>
                             
                         </div>
                     </div>                      
@@ -57,8 +61,8 @@
                     <div class="card">
                         <div class="card-body">
                             <i class="fa-solid fa-house-user"></i>
-                            <h3 class="card-title">Resident of Telonari Panchayat</h3>
-                            
+                            <h3 class="card-title">Resident of Telonari</h3>
+                            <h4>Panchayat</h4>
                         </div>
                     </div>                      
                 </div>
@@ -66,7 +70,8 @@
                     <div class="card">
                         <div class="card-body">
                             <i class="fa-solid fa-handshake"></i>
-                            <h3 class="card-title">Interested in Social Service</h3>
+                            <h3 class="card-title">Interested in Social</h3>
+                            <h4>Service</h4>
                             
                         </div>
                     </div>                      
@@ -75,7 +80,8 @@
                     <div class="card">
                         <div class="card-body">
                             <i class="fa-solid fa-id-card"></i>
-                            <h3 class="card-title">Valid Identity Proof Card</h3>
+                            <h3 class="card-title">Valid Identity Proof</h3>
+                            <h4>Card</h4>
                             
                         </div>
                     </div>                      
@@ -85,20 +91,22 @@
     </section>
     <section class="joinform">
         <div class="container">
-            <h2>Join Committee Form</h2>
+            <h2><i class="fa-solid fa-file-signature"></i>&nbsp;&nbsp;Committee Application Form</h2>
+            <p>Fill in the details below to apply for membersip in the Panchayat Committee</p>
             <div class="row">
-                <div class="col">
+                <div class="col-lg-6 col-12">
                     <div class="forms">
                         <form>
-                            <label for="name">Name:</label>
+                            <h3><i class="fa-solid fa-user"></i>Personal Information</h3>
+                            <label for="name">Name:</label><br>
                             <input type="text" id="name" placeholder="Enter Full name" required/><br><br>
-                            <label for="fname">Father's Name:</label>
+                            <label for="fname">Father's Name:</label><br>
                             <input type="text" id="fname" placeholder="Enter father name" required/><br><br>
-                            <label for="number">Phone Number:</label>
+                            <label for="number">Phone Number:</label><br>
                             <input type="digit" id="number" placeholder="Enter phone number" required/><br><br>
-                            <label for="email">Email:</label>
+                            <label for="email">Email:</label><br>
                             <input type="email" id="fname" placeholder="Enter valid email" required/><br><br>
-                            <label for="age">Age:</label>
+                            <label for="age">Age:</label><br>
                             <input type="month" id="month" placeholder="Enter Valid Age" required/><br><br>
                             <label for="fname">Occupation:</label><br>
                             <input type="checkbox" name="stu" value="1">Student
@@ -109,10 +117,17 @@
                             <input type="radio" name="gender" value="M">Male
                             <input type="radio" name="gender" value="F">Female
                             <input type="radio" name="gender" value="O">Other<br><br>
-                            <label for="image">Upload Photo:</label>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-12">
+                    <div class="forms1">
+                        <form>
+                            <h3><i class="fa-solid fa-file"></i>Document & Address</h3>
+                            <label for="image">Upload Photo:</label><br>
                             <input type="file" id="upload" placeholder="Place Image"><br><br>
 
-                            <label for="image">Upload ID Proof:</label>
+                            <label for="image">Upload ID Proof:</label><br>
                             <input type="file" id="upload" placeholder="Place id proof"><br><br>
 
                             <label for="fname">Address</label><br>
@@ -131,13 +146,15 @@
     </section>
     <section class="benefits">
         <div class="container">
-            <h2>Membership Benefits</h2>
+            <h2><i class="fa-solid fa-user-group"></i>&nbsp;&nbsp;Membership Benefits</h2>
+            <p>&nbsp;&nbsp;&nbsp;Being a part of the committee gives you the oppourtunity to grow, serve and make a real differnce</p>
             <div class="row">
                 <div class="col-lg-3 col-sm-4 col-12">
                     <div class="card">
                         <i class="fa-solid fa-trophy"></i>
                         <div class="card-body">
                             <h3>Leadership Opportunities</h3>
+                            <h4>Develop your skills and lead the change.</h4>
                         </div>
                     </div>
                 </div>
@@ -146,6 +163,7 @@
                         <i class="fa-solid fa-handshake"></i>
                         <div class="card-body">
                             <h3>Social Service Activities</h3>
+                            <h4>Work for the welfare of society and the needy.</h4>
                         </div>
                     </div>
                 </div>
@@ -154,6 +172,7 @@
                         <i class="fa-solid fa-users"></i>
                         <div class="card-body">
                             <h3>Community Participation</h3>
+                            <h4>Be a part of decision making and dev elopment process.</h4>
                         </div>
                     </div>
                 </div>
@@ -162,6 +181,7 @@
                         <i class="fa-solid fa-seedling"></i>
                         <div class="card-body">
                             <h3> Village Development Contribution</h3>
+                            <h4>Help in  building a cleaner and a stronger village. </h4>
                         </div>
                     </div>
                 </div>
