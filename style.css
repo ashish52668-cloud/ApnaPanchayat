@@ -83,10 +83,13 @@ html,body{
 }
 .nav-link{
     color: black;
+    border:solid 2px transparent;
+    transform:translateX(-5px);
 }
 .nav-link:hover {
     border-top:solid 2px black; 
     transform: none;
+    transition:2s;
 }
 .dropdown-menu li a {
         color:black;
@@ -199,6 +202,7 @@ html,body{
     border:none;
     -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
     box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+    border:solid 2px transparent;
 }
 .card:hover {
     transform:translateX(10px);
@@ -487,6 +491,7 @@ h2  {
 .notices:hover {
     transform:scale(1.1,1.1);
     border:none;
+    transition:2s;
     
 }
 .notices h3 {
@@ -522,6 +527,7 @@ h2  {
 .rightpart {
     padding:0 10px;
     margin-top:20px;
+    border:solid 2px transparent;
     
 }
 .rightpart:hover {
@@ -654,6 +660,7 @@ h2  {
 }
 .box {
     padding:30px 5px;
+    border:solid 1px transparent;
     gap:10px;
     text-align: center;
     border-radius:70%;
@@ -700,6 +707,10 @@ h2  {
 .contactpart .card {
     height:auto;
     border:solid 2px black;
+    min-height:500px;
+}
+.contactpart .card:nth-child(1){
+    min-height:600px;
 }
 .contactpart h5 {
     text-align:center;
@@ -718,6 +729,7 @@ h2  {
     padding-right:5px;
     padding-left:5px;
     color:black;
+    font-weight:bold;
 }
 .contactpart input{
     padding:13px 35px;
@@ -1188,5 +1200,47 @@ h2  {
     
     color:black;
     border:solid 2px black ;
+    }
 }
+@media (max-width:1139px){
+    #logo img {
+            width:100%;
+            height:200px;
+            padding-left:20px;
+            padding-bottom:5px;
+        }
+    .title p{     
+        font-size:18px;
+        line-height:8px;      
+    }
+}
+@media (max-width:1500px){
+    .navbar-nav {
+        font-size:17px;
+        color:white !important;
+        padding:6px 20px;
+        font-weight:600;
+        gap:30px;
+    
+    }
+    .nav-link{
+        color: black;
+        border:solid 2px transparent;
+        transform:translateX(-5px);
+}
+    .nav-link:hover {
+        border-top:solid 2px black; 
+        transform: none;
+        transition:2s;
+    }
+}
+@media (max-width:1199px){
+    .navbar-nav {
+        font-size:13px;
+        color:white !important;
+        padding:6px 10px;
+        font-weight:600;
+        gap:10px;
+    
+    }
 }
